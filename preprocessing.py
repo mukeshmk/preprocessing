@@ -14,4 +14,10 @@ df = pd.read_csv('income-data.csv', na_values={
         'Body Height [cm]': [],
         'Income in EUR': []
 })
+
+df['Gender'].fillna('other', inplace=True)
+df['Profession'].fillna(method='ffill', inplace=True)
+df['University Degree'].fillna(method='ffill', inplace=True)
+df['Hair Color'].fillna(method='ffill', inplace=True)
+
 print(df.head())
