@@ -19,5 +19,6 @@ df['Gender'].fillna('other', inplace=True)
 df['Profession'].fillna(method='ffill', inplace=True)
 df['University Degree'].fillna(method='ffill', inplace=True)
 df['Hair Color'].fillna(method='ffill', inplace=True)
+df['Income in EUR'] = df['Income in EUR'].abs()
 
 print(df.head())
