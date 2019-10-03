@@ -5,14 +5,9 @@ df = pd.read_csv('income-data.csv', na_values={
         'Year of Record': ['#N/A'],
         'Gender': [0, '#N/A', 'unknown'],
         'Age': ['#N/A'],
-        'Country': [],
-        'Size of City': [],
         'Profession': ['#N/A'],
         'University Degree': [0, '#N/A'],
-        'Wears Glasses': [],
-        'Hair Color': [0, '#N/A', 'Unknown'],
-        'Body Height [cm]': [],
-        'Income in EUR': []
+        'Hair Color': [0, '#N/A', 'Unknown']
 })
 
 df['Gender'].fillna('other', inplace=True)
